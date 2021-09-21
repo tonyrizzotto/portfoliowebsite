@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import Hero from './custom/Hero/Hero';
+// import Button from './custom/Button/Button';
+import HeroContent from './components/HeroContent';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero imageSrc={process.env.PUBLIC_URL + 'images/bluedesk.jpg'}>
+        <div>
+          <HeroContent />
+          {/* <Button text="Get In Touch" styles="primary has-padding" /> */}
+        </div>
+      </Hero>
     </div>
   );
-}
+};
 
 export default App;

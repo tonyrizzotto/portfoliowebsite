@@ -1,0 +1,21 @@
+.hero-content {
+  color: white;
+  max-width: 650px;
+  margin: 5%;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.hero-content img {
+  width: 150px;
+  border-radius: 100px;
+}
