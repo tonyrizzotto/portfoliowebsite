@@ -1,9 +1,9 @@
 import React from 'react';
-import './HeroContent.css';
+import './Home.css';
 
 const HeroContent = () => {
   return (
-    <div className="hero-content">
+    <div className="home-content">
       <h1>TONY RIZZOTTO</h1>
       <p>
         Hello! My name is Tony Rizzotto and I'm a Boston-based full-stack web
@@ -16,7 +16,11 @@ const HeroContent = () => {
         Javascript-based and have used Python for backend development, as well.
       </p>
 
-      <img src={process.env.PUBLIC_URL + 'images/tonyhead.jpg'} />
+      <img
+        src={process.env.PUBLIC_URL + 'images/tonyhead.jpg'}
+        alt="Headshot of Tony Rizzotto"
+      />
+      <hr />
     </div>
   );
 };
