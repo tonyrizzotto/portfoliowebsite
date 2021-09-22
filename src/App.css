@@ -32,12 +32,31 @@
 }
 
 #bottom-nav a {
+  position: relative;
   color: white;
+  text-decoration: none;
+}
+#bottom-nav a::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transform-origin: left;
+  translate: transform ease 500ms;
 }
 
 #bottom-nav a:hover {
-  transition: ease 0.4s;
+  transition: ease 500ms;
   color: #886bcc;
+}
+#bottom-nav a:hover::after {
+  transform: scale(1);
+  transition: 500ms ease;
+  background-color: lightgreen;
 }
 
 /* Small iphones */
