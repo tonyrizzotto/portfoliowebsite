@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from './custom/Hero/Hero';
 import Home from './components/Home';
-import Projects from './components/Projects';
 import './App.css';
 
 import {
@@ -26,13 +25,25 @@ const App = () => {
                       <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <Link to="/projects">Projects</Link>
+                      <a
+                        href="https://github.com/tonyrizzotto"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Projects
+                      </a>
                     </li>
                     <li>
-                      <Link to="/resume">Resume</Link>
+                      <a
+                        href="https://linkedin.com/in/tony-rizzotto"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Resume
+                      </a>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <a href="mailto:tony@tonyrizzotto.com">Contact</a>
                     </li>
                   </ul>
                 </nav>
@@ -45,11 +56,7 @@ const App = () => {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/projects">
-                <Projects></Projects>
-              </Route>
               <Route path="/resume"></Route>
-              <Route path="/contact"></Route>
             </Switch>
           </div>
         </Router>

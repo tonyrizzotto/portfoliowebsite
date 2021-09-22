@@ -27,3 +27,9 @@
   position: absolute;
   top: 0%;
 }
+
+@media only screen and (max-height: 420px) {
+  #gradient {
+    height: 210vh;
+  }
+}
